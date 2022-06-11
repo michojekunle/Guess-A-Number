@@ -1,0 +1,149 @@
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: linear-gradient(#141e30, #213853);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    width: 80vw;
+    max-width: 800px;
+    padding: 40px;
+    background: rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 20px;
+}
+
+.container h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color:#141e30;
+    text-align: center;
+    background-color:#03e9f4;
+    padding: 8px 20px;
+    border-radius: 9px;
+    text-align: center;
+}
+
+
+#input::placeholder {
+    color:antiquewhite;
+    font-size: 1rem;
+}
+
+#input {
+    outline: none;
+    border: none;
+    border-bottom: antiquewhite 2px solid;
+    background: none;
+    width: 80px;
+    text-align: center;
+    padding: 8px;
+    color:antiquewhite;
+    font-size: 1.5rem;
+}
+
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content> p {
+    font-size: 16px;
+    line-height: 18px;
+    color: antiquewhite;
+    text-align: center;
+}
+
+#outputText {
+    color: #03e9f4;
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+}
+
+.container a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+
+}
+
+.container a:hover{
+    background-color:#03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
+
+}
+
+.container a span {
+    position: absolute;
+    display: block;
+}
+
+.container a #top {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-animation1 3s linear infinite;
+}
+
+@keyframes btn-animation1{
+    0%{
+        left: -100%;
+    }
+    50%, 100% {
+        left: 100%;
+    }
+}
+
+.container a #bottom {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn-animation2 3s linear infinite;
+    animation-delay: .5s;
+}
+
+@keyframes btn-animation2{
+    0%{
+        right: -100%;
+    }
+    50%, 100% {
+        right: 100%;
+    }
+}
+
+@media (max-width:400px) {
+    .container h2 {
+        font-size: 18px;
+    }
+
+    .content p {
+        font-size: 13px;
+    }
+}
