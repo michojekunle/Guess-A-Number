@@ -76,7 +76,8 @@ body{
 .container a {
     position: relative;
     display: inline-block;
-    padding: 20px 60px;
+    justify-content: center;
+    padding: 10px 20px;
     color: #03e9f4;
     font-size: 16px;
     text-decoration: none;
@@ -86,7 +87,6 @@ body{
     margin-top: 40px;
     letter-spacing: 4px;
     width:30%;
-    text-align: center;
 }
 
 .container a:hover{
