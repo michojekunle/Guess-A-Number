@@ -8,7 +8,7 @@ btn.addEventListener('click', function() {
     
     if(input == number ){
         output.innerHTML = `Correct Guess, your guess was ${number}`; 
-        btn.style.display = "none"
+        btn.style.display = "none";
     } else if(input < number ){
         output.innerHTML = `Try Again, your guess is too low`; 
     } else if(input > number ){
