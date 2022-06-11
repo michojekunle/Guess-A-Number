@@ -12,8 +12,6 @@ btn.addEventListener('click', function() {
         output.innerHTML = `Try Again, your guess is too low`; 
     } else if(input > number ){
         output.innerHTML = `Try Again, your guess is too high`; 
-    } else if(input < 0 || input > 20 ){
-        output.innerHTML = `Incorrect input, Enter a number between 1 and 20`; 
     } else{
         output.innerHTML = `Enter a valid number between 1 and 20`; 
     }    
