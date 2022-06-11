@@ -34,12 +34,6 @@ body{
     text-align: center;
 }
 
-
-#input::placeholder {
-    color:antiquewhite;
-    font-size: 1rem;
-}
-
 #input {
     outline: none;
     border: none;
