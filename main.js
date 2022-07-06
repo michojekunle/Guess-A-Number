@@ -1,7 +1,15 @@
 const btn = document.getElementById('guess');
 const output = document.getElementById('outputText');
+const container = document.querySelector('.container');
+
 
 const number = Math.ceil(Math.random()*20);
+
+function tryAgain() {
+    let button = document.createElement('div');
+    button.innerHTML = '<button onclick="window.location.reload()">Try Again</button>';
+    container.appendChild(button);
+} 
 
 btn.addEventListener('click', function() {
     let input = document.getElementById('input').value;
@@ -9,6 +17,7 @@ btn.addEventListener('click', function() {
     if(input == number ){
         output.innerHTML = `Correct Guess, your guess was ${number}`; 
         btn.style.display = "none";
+        tryAgain();
     } else if(input < number ){
         output.innerHTML = `Try Again, your guess is too low`; 
     } else if(input > number ){
