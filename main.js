@@ -7,7 +7,7 @@ const number = Math.ceil(Math.random()*20);
 
 function tryAgain() {
     let button = document.createElement('div');
-    button.innerHTML = '<button onclick="window.location.reload()">Try Again</button>';
+    button.innerHTML = '<button style={padding: 8px 18px; border:none; border-radius:8px;} onclick="window.location.reload()">Try Again</button>';
     container.appendChild(button);
 } 
 
